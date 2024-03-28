@@ -74,6 +74,13 @@
 
             @endif
 
+            @if($decoded->tier == "PLATINUM")
+
+            <img class="tierStyle" src="{{asset('img/icons/platinum.png')}}" alt="">
+
+
+            @endif
+
             @if($decoded->tier == "DIAMOND")
 
             <img class="tierStyle" src="{{asset('img/icons/diamond.jpg')}}" alt="">
