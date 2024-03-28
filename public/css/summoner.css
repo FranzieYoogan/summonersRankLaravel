@@ -28,6 +28,7 @@ width: 1000px !important;
 
     color: #C89B3C;
         text-align: center;
+        font-size: 30px;
 
 }
 
@@ -35,18 +36,21 @@ width: 1000px !important;
 
     color: green;
     text-align: center;
+    font-size: 30px;
 }
 
 .textDiv2LossesStyle {
 
     color: red;
     text-align: center;
+    font-size: 30px;
 }
 
 .textDiv2RateStyle {
 
     color: #005A82;
     text-align: center;
+    font-size: 30px;
 }
 
 .tierStyle {
