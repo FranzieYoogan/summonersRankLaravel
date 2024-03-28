@@ -83,7 +83,7 @@
 
             @if($decoded->tier == "MASTER")
 
-            <img class="tierStyle" src="{{asset('img/icons/master.jpg')}}" alt="">
+            <img class="tierStyle" src="{{asset('img/icons/master.png')}}" alt="">
 
 
             @endif
