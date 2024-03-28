@@ -24,20 +24,20 @@
 
      @include('header');
 
-          <form method="POST" action="/summoner" class="containerStyle container">
+          <form method="POST" action="/summoner" class="containerStyle ">
             @csrf 
 
 
             <section class="containerContent">
 
                 <div style="border-bottom: 1px solid white;  width: 100% !important;">
-                <h1  class="textStyle">Search through your Summoner's Name</h1>
+                <h1  class="textStyle">Summoner's Rank</h1>
             </div>
 
-                <div style="display: flex; height: 8vh; margin-top: 2em; margin-left: 2em; width: 100%; gap:3em">
+                <div style="display: flex; height: 8vh; margin-top: 2em; margin-left: 2em; width: 100%; gap:1em">
 
-                    <button  onclick="selectEvent2()"  type="button" class="textStyle3">Summoner's Name</button>
-                    <input class="summonerStyle" name="summoner" id="summoner" type="text" value="">
+                    <button  onclick="selectEvent2()"  type="button" class="btn textStyle3">nickName</button>
+                    <input class="form-control summonerStyle" name="summoner" id="summoner" type="text" value="">
                     <img id="mickey2" class="mickey2" src="{{asset('img/icons/mickey.jpg')}}" alt="">
                 </div>
 
@@ -45,12 +45,17 @@
 
                     
 
-                <div style="display: flex; height: 8vh; margin-top: 1em; width: 180px; margin-left: 2em; margin-bottom: 2em">
+                <div style="display: flex; height: 8vh; margin-top: 1em; width: 170px; margin-left: 2em; margin-bottom: 2em">
                 <select onchange="checkData()" onclick="selectEvent()" onblur="selectEventOut()" name="region" id="region"  class="textStyle2 form-select" aria-label="Default select example">
                     <option  id="options" class="options" selected>Region</option>
-                    <option  id="options" class="options" value="na1">Na</option>
-                    <option  id="options" class="options" value="euw1">EUW</option>
                     <option  id="options" class="options" value="br1">BR</option>
+                    <option  id="options" class="options" value="la1">LA1</option>
+                    <option  id="options" class="options" value="la2">LA2</option>
+                    <option  id="options" class="options" value="kr">KR</option>
+                    <option  id="options" class="options" value="na1">Na</option>
+                    <option  id="options" class="options" value="eun1">EUN</option>
+                    <option  id="options" class="options" value="euw1">EUW</option>
+
                   </select>
                   <img id="mickey" class="mickey" src="{{asset('img/icons/mickey.jpg')}}" alt="">
                 </div>  

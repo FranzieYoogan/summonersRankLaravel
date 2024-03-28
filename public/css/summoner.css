@@ -1,46 +1,52 @@
 .containerContent {
 
-width: 650px;
 
+width: 1000px !important;
 }
 
 .containerContainer {
 
     display: flex;
     justify-content: center;
-    width: auto !important;
+    width: 100% !important;
     font-family: pixel2;
-   
+    margin-top: 2em;
 }
 
 .textDiv1Style {
 
-    font-size: 30px;
-    margin-top: 0.4em;
+    font-size: 20px;
+    margin-top: 2em !important;
     color: white;
     text-shadow: 2px 2px 2px #00b3ff;
+    margin-top: 1em;
+    position: relative;
+    left: 3em;
 }
 
 .textDiv2Style {
 
     color: #C89B3C;
-    
+        text-align: center;
 
 }
 
 .textDiv2WinStyle {
 
     color: green;
+    text-align: center;
 }
 
 .textDiv2LossesStyle {
 
     color: red;
+    text-align: center;
 }
 
 .textDiv2RateStyle {
 
     color: #005A82;
+    text-align: center;
 }
 
 .tierStyle {
@@ -52,6 +58,9 @@ width: 650px;
 .containerDatos {
 
     padding: 20px;
+    display: flex;
+    gap: 3em;
+    width: 100% !important;
 }
 
 @font-face {
@@ -69,3 +78,22 @@ width: 650px;
     font-family: pixel;
 
   }
+
+  .buttonIcon {
+
+    width: 30px;
+    margin-right: 3px;
+    padding: 2px;
+    border: 1px solid white;
+border-radius: 80px;
+transition: 1s;
+  }
+
+  .buttonIcon:hover {
+
+    border: 1px solid transparent;
+    transform: scale(1.5);
+  }
+
+
+

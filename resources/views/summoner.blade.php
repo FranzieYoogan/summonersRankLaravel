@@ -30,7 +30,7 @@
 
             @if($decoded->tier == "GRANDMASTER")
 
-            <img class="tierStyle" src="{{asset('img/icons/grandmaster.png')}}" alt="">
+            <img class="tierStyle" src="{{asset('img/icons/grandmaster.jpg')}}" alt="">
 
 
             @endif
@@ -88,26 +88,26 @@
 
       
 
-            @if($decoded->tier == "GRANDMASTER")
+         
 
-            <img class="tierStyle" src="{{asset('img/icons/grandmaster.jpg')}}" alt="">
+           
 
-
-            @endif
-
-            <div>
-
-                <h1 class="textDiv1Style" style="text-align: center">{{$decoded->tier}}</h1>
-                <h1 class="textDiv1Style" style="text-align: left;">Summoner: {{$decoded->summonerName}}</h1>
-
+          
+                <h1 class="textDiv1Style" style="text-align: left;">Summoner: {{$decoded->summonerName}} | </h1>
+                <h1 class="textDiv1Style" style="text-align: center">{{$decoded->tier}} |        <a href="/" class="backStyle"> <img class="buttonIcon" src="{{asset('img/icons/arrow.png')}}" alt=""> </a></h1>
                
 
-            </div>
+          
+
+                
+             
+    
+             
 
        
 
         </div>
-
+ 
           
 
         <div class="containerDatos">
@@ -121,7 +121,7 @@
                 <h1 class="textDiv2LossesStyle">losses {{$decoded->losses}}</h1>
                 
            
-                <h1 class="textDiv2RateStyle">Win rate {{round($result * 10000,0) . "%" }}</h1>
+                <h1 class="textDiv2RateStyle">W Rate {{round($result * 10000,0) . "%" }}</h1>
             
             </div>
     

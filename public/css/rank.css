@@ -52,6 +52,8 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 2em;
+    width: 100%;
+overflow: hidden;
 
 }
 
@@ -60,7 +62,7 @@ body {
 
     border: 1px solid white;
     border-radius: 5px;
-
+    width: 450px;
 
 
 }
@@ -68,18 +70,18 @@ body {
 .textStyle {
     font-family: pixel2;
     color: #C89B3C;
-    font-size: 30px;
+    font-size: 20px;
     text-shadow: 2px 2px 2px black;
     font-weight: 900;
     padding: 10px;
-
+    text-align: center;
 }
 
 .textStyle2 {
     font-family: pixel2;
     color: #C89B3C;
 
-    font-size: 15px;
+    font-size: 13px;
     text-shadow: 2px 2px 2px black;
     font-weight: 900;
     background-color: transparent !important;
@@ -91,18 +93,18 @@ body {
 
 .textStyle3 {
     font-family: pixel2;
-    color: #C89B3C;
+    color: #C89B3C !important;
     
-    font-size: 15px;
-    padding: 5px !important;
-    border: 1px solid white;
+    font-size: 13px;
+    padding: auto !important;
+    border: 1px solid white !important;
     border-radius: 5px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black !important;
     font-weight: 900;
     background-color: transparent !important;
     transition: 1s !important;
     cursor: pointer;
-    width: auto !important;
+    width: 120px !important;
 
 
 
@@ -111,12 +113,12 @@ body {
 .summonerStyle {
 
     visibility: hidden;
-    width: 300px;
+    width: 200px;
     border-radius: 20px;
     border: 1px solid white;
     padding-left: 20px;
-    background-color: transparent;
-    color: #C89B3C;
+    background-color: transparent !important;
+    color: #C89B3C !important;
   
 }
 
@@ -132,8 +134,8 @@ body {
 
     width: 55px !important;
     visibility: hidden;
-    position: absolute;
-    left: 60%;
+  position: relative;
+  right: 1em;
 }
 
 
@@ -163,22 +165,37 @@ body {
 .submit {
 
         position: absolute;
-        left: 90%;
+        left: 85%;
         top: -3em;
-    background-color: transparent;
-    border-radius: 40px;
+    background-color: transparent !important;
+    border: transparent !important;
     transition: 1s;
     visibility: hidden;
+        width: 40px;
+        height: auto !important;
 }   
+
+  .submitIcon {
+
+    width: 30px;
+    margin-right: 3px;
+    padding: 2px;
+    border: 1px solid white;
+border-radius: 80px;
+transition: 1s;
+rotate: 175deg;
+width: 30px;
+  }
+
+  .submitIcon:hover {
+
+    border: 1px solid transparent;
+    transform: scale(1.5);
+  }
 
 .submit:hover {
 
     transform: scale(1.2);
-
+    border: 1px solid transparent;
 }
 
-.submitIcon {
-
-    rotate: 175deg;
-
-}
