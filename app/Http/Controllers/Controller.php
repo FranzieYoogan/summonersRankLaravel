@@ -27,7 +27,7 @@ class Controller extends BaseController
                 $response = Http::get($url);
         
                 
-                if(isset($response)) {
+                if(isset($response['id'])) {
 
                     
                
@@ -37,13 +37,19 @@ class Controller extends BaseController
 
                     $decoded = json_decode($data);
 
-                
+                }
+
+                if(isset($decoded[0])) {
 
                     return view('summoner',['decoded' => $decoded[0]]);
-                }
+            
             } else {
 
-                return view('welcome');
+                $error = true;
+
+                header("Location: http://127.0.0.1:8000/");
+
+                return view('welcome',['error' => $error]);
 
 
             }
@@ -51,7 +57,7 @@ class Controller extends BaseController
       
 
             
-
+        }
 
         
 

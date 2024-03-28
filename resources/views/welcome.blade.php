@@ -34,10 +34,10 @@
                 <h1  class="textStyle">Summoner's Rank</h1>
             </div>
 
-                <div style="display: flex; height: 8vh; margin-top: 2em; margin-left: 2em; width: 100%; gap:1em">
+                <div style="display: flex; height: auto; margin-top: 2em; margin-left: 2em; width: 100%; gap:1em">
 
-                    <button  onclick="selectEvent2()"  type="button" class="btn textStyle3">nickName</button>
-                    <input class="form-control summonerStyle" name="summoner" id="summoner" type="text" value="">
+                    <h1 style="cursor: default" class="btn textStyle3">nickName</h1>
+                    <input onclick="selectEvent2()"  class="form-control summonerStyle" name="summoner" id="summoner" type="text" value="">
                     <img id="mickey2" class="mickey2" src="{{asset('img/icons/mickey.jpg')}}" alt="">
                 </div>
 
@@ -45,7 +45,7 @@
 
                     
 
-                <div style="display: flex; height: 8vh; margin-top: 1em; width: 170px; margin-left: 2em; margin-bottom: 2em">
+                <div style="display: flex; height: 50px; margin-top: 1em; width: 161px; margin-left: 2em; margin-bottom: 2em">
                 <select onchange="checkData()" onclick="selectEvent()" onblur="selectEventOut()" name="region" id="region"  class="textStyle2 form-select" aria-label="Default select example">
                     <option  id="options" class="options" selected>Region</option>
                     <option  id="options" class="options" value="br1">BR</option>
@@ -60,7 +60,36 @@
                   <img id="mickey" class="mickey" src="{{asset('img/icons/mickey.jpg')}}" alt="">
                 </div>  
 
-               
+                @if(isset($_POST['submit']) && isset($error))
+
+                <h1 id="error" class="errorStyle">ERROR</h1>
+
+                
+
+                <script>
+
+
+setTimeout(() => {
+        
+        document.getElementById('error').style.left = '0.5em'
+        document.getElementById('error').style.transition = '1s'
+
+}, "50");
+
+setTimeout(() => {
+        
+        document.getElementById('error').style.left = '-0.5em'
+
+}, "100");
+                
+                setTimeout(() => {
+        
+                window.location.href = 'http://127.0.0.1:8000/';
+
+}, "1000");
+                
+                </script>
+                @endif
 
       
 
@@ -111,7 +140,7 @@
                 if(click2 == 1) {
 
                     document.getElementById('mickey2').style.visibility = "visible";
-                    document.getElementById('summoner').style.visibility = "visible";
+             
                 }
 
                

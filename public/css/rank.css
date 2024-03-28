@@ -51,9 +51,10 @@ body {
 
     display: flex;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 0.5em;
     width: 100%;
-overflow: hidden;
+
+overflow-y: hidden;
 
 }
 
@@ -87,16 +88,16 @@ overflow: hidden;
     background-color: transparent !important;
     transition: 1s !important;
     cursor: pointer;
-    padding: auto !important;
 
+ 
 }
 
 .textStyle3 {
     font-family: pixel2;
     color: #C89B3C !important;
-    
+
     font-size: 13px;
-    padding: auto !important;
+    padding-top: 13px !important;
     border: 1px solid white !important;
     border-radius: 5px;
     text-shadow: 2px 2px 2px black !important;
@@ -104,7 +105,8 @@ overflow: hidden;
     background-color: transparent !important;
     transition: 1s !important;
     cursor: pointer;
-    width: 120px !important;
+    width: auto !important;
+    height: auto !important;
 
 
 
@@ -112,14 +114,16 @@ overflow: hidden;
 
 .summonerStyle {
 
-    visibility: hidden;
-    width: 200px;
+ 
+
     border-radius: 20px;
     border: 1px solid white;
     padding-left: 20px;
     background-color: transparent !important;
     color: #C89B3C !important;
-  
+        width: 190px;
+        position: relative;
+        bottom: 5px;
 }
 
 .mickey {
@@ -199,3 +203,11 @@ width: 30px;
     border: 1px solid transparent;
 }
 
+.errorStyle {
+
+    color: #C89B3C;
+    text-shadow: 2px 2px 2px red;
+    position: relative;
+    top: 0.3em;
+    left: 0.5em;
+}
