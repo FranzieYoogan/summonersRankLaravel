@@ -1,0 +1,179 @@
+.menuIconStyle {
+
+    width: 80px;
+    border-radius: 40px;
+    border: 3px solid white;
+
+}
+
+.navbar {
+
+    border-bottom: 3px solid white;
+    background-color: #091428 !important;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url('/fonts/fremont.ttf');
+  }
+
+  @font-face {
+    font-family: pixel2;
+    src: url('/fonts/pixel.TTF');
+  }
+  
+
+body {
+
+    background-color: #0A1428;
+    font-family: pixel;
+}
+
+.titleStyle {
+
+    color: #C89B3C;
+    text-shadow: 2px 2px 2px #005A82;
+    font-weight: 900;
+    font-size: 30px !important;
+    margin-left: 0.5em;
+    position: relative;
+    top: 5px;
+    cursor: default;
+
+}
+
+.containerStyle {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+
+}
+
+
+.containerContent {
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+
+
+}
+
+.textStyle {
+    font-family: pixel2;
+    color: #C89B3C;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 900;
+    padding: 10px;
+
+}
+
+.textStyle2 {
+    font-family: pixel2;
+    color: #C89B3C;
+
+    font-size: 15px;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 900;
+    background-color: transparent !important;
+    transition: 1s !important;
+    cursor: pointer;
+    padding: auto !important;
+
+}
+
+.textStyle3 {
+    font-family: pixel2;
+    color: #C89B3C;
+    
+    font-size: 15px;
+    padding: 5px !important;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 900;
+    background-color: transparent !important;
+    transition: 1s !important;
+    cursor: pointer;
+    width: auto !important;
+
+
+
+}
+
+.summonerStyle {
+
+    visibility: hidden;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding-left: 20px;
+    background-color: transparent;
+    color: #C89B3C;
+  
+}
+
+.mickey {
+
+    width: 80px;
+    visibility: hidden;
+
+
+}
+
+.mickey2 {
+
+    width: 55px !important;
+    visibility: hidden;
+    position: absolute;
+    left: 60%;
+}
+
+
+
+
+.options {
+
+    background: #091428 ;
+    color: #C89B3C;
+    text-shadow: 2px 2px 2px white !important;
+
+}
+
+
+
+.options:hover, .options:focus {
+
+    background: red !important;
+    color: #005A82 !important;
+    text-shadow: 2px 2px 2px white !important;
+    transition: 1s !important;
+    
+
+}
+
+
+.submit {
+
+        position: absolute;
+        left: 90%;
+        top: -3em;
+    background-color: transparent;
+    border-radius: 40px;
+    transition: 1s;
+    visibility: hidden;
+}   
+
+.submit:hover {
+
+    transform: scale(1.2);
+
+}
+
+.submitIcon {
+
+    rotate: 175deg;
+
+}
