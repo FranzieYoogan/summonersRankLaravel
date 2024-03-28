@@ -1,0 +1,71 @@
+.containerContent {
+
+width: 650px;
+
+}
+
+.containerContainer {
+
+    display: flex;
+    justify-content: center;
+    width: auto !important;
+    font-family: pixel2;
+   
+}
+
+.textDiv1Style {
+
+    font-size: 30px;
+    margin-top: 0.4em;
+    color: white;
+    text-shadow: 2px 2px 2px #00b3ff;
+}
+
+.textDiv2Style {
+
+    color: #C89B3C;
+    
+
+}
+
+.textDiv2WinStyle {
+
+    color: green;
+}
+
+.textDiv2LossesStyle {
+
+    color: red;
+}
+
+.textDiv2RateStyle {
+
+    color: #005A82;
+}
+
+.tierStyle {
+
+    width: 100px;
+
+}
+
+.containerDatos {
+
+    padding: 20px;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url('/fonts/fremont.ttf');
+  }
+
+  @font-face {
+    font-family: pixel2;
+    src: url('/fonts/pixel.TTF');
+  }
+
+  body {
+
+    font-family: pixel;
+
+  }
