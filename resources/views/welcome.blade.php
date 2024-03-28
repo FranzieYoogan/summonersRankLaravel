@@ -62,7 +62,11 @@
 
                 @if(isset($_POST['submit']) && isset($error))
 
-                <h1 id="error" class="errorStyle">ERROR</h1>
+                <div style="position: relative">
+                    <h1 id="error" class="errorStyle">ERROR</h1>
+
+                </div>
+             
 
                 
 
